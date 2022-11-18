@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线预览</title>
+</head>
+<script>
+    var view = document.getElementById("iframe")
+    function code(){
+        var file = prompt("输入文件名(含后缀)")
+        location.replace("http://view.officeapps.live.com/op/view.aspx?src=http://zgsj07707122.z59.80data.net/file/"+file)
+        //console.log(url1)
+    }
+    function code_1(){
+        alert("请访问网址:ftp://221.231.139.59/wwwroot/file/")
+    }
+</script>
+<body>
+    <div>
+        <button><a href="javascript:code_1();">上传文件</a></button>
+        <button><a href="javascript:code();">跳转</a></button>
+    </div>
+</body>
+</html>
